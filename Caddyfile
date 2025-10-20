@@ -3,7 +3,7 @@
     redir https://{host}{uri}
 }
 
-meme.cv-stash.com {
+api.valographs.com {
     reverse_proxy vg-backend:3001
 
     # Add CORS headers
