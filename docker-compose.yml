@@ -11,6 +11,12 @@ services:
             - 3001:3001
 
     caddy:
+        build:
+            context: .
+        develop:
+            watch:
+                - path: ./Caddyfile
+                  action: rebuild
         image: caddy:2-alpine
         container_name: caddy
         depends_on:
