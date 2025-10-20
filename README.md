@@ -14,7 +14,7 @@ This is a repo with everything you need to deploy the API for [ValoGraphs](https
 1. Access the virtual machine via SSH or your preferred remote access tool
 2. Clone this repo and cd into it
     ```bash
-    git clone https://github.com/valo-labs/vg-deploy.git && cd vg-deploy
+    git clone https://github.com/jfang324/vg-deploy.git && cd vg-deploy
     ```
 3. Run the provisioning script
     ```bash

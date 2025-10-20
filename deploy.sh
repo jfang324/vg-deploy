@@ -8,10 +8,10 @@ cd ~/vg-deploy
 git fetch origin main
 
 echo "Pulling latest container images..."
-sudo docker-compose pull
+sudo docker compose pull
 
 echo "Recreating containers with the latest images..."
-sudo docker-compose up -d
+sudo docker compose up -d
 
 echo "Cleaning up unused resources..."
 sudo docker image prune -f
