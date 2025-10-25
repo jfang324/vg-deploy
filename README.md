@@ -1,17 +1,20 @@
-# VG Deployment
+## About The Project
 
-This is a repo with everything you need to deploy the API for [ValoGraphs](https://valographs.com) to an ubuntu virtual machine.
+This is a repository with everything you need to deploy the API for [ValoGraphs](https://valographs.com) to an ubuntu virtual machine.
 
-## Prerequisites
+## Getting Started
+
+### Prerequisites
 
 -   A remote Ubuntu virtual machine
--   A .env file as specified in the vg-backend repo
+-   A .env file as specified in the [vg-backend](https://github.com/jfang324/vg-backend) repo
 -   A domain name
 -   A CNAME DNS record pointing to the IP address of the virtual machine
 
-## Steps
+### Installation
 
 1. Access the virtual machine via SSH or your preferred remote access tool
+
 2. Clone this repo and cd into it
     ```bash
     git clone https://github.com/jfang324/vg-deploy.git && cd vg-deploy
@@ -36,3 +39,10 @@ This is a repo with everything you need to deploy the API for [ValoGraphs](https
     ```bash
     curl -s https://<domain-name>/v1/health
     ```
+
+## Tools & Technologies
+
+-   [AWS EC2](https://aws.amazon.com/ec2/)
+-   [Docker Compose](https://docs.docker.com/compose/)
+-   [Caddy](https://caddyserver.com/)
+-   [Bash](https://www.gnu.org/software/bash/)
